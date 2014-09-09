@@ -46,7 +46,7 @@ console.log(calculateAge(currYear, birthYear));
 // Calculate how many you would eat total for the rest of your life.
 // Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".
 function lifetimeSupply(currAge, maxAge, consumptionPerDay) {
-    requiredSupply = consumptionPerDay * 365 * (maxAge - currAge);
+    var requiredSupply = consumptionPerDay * 365 * (maxAge - currAge);
     return "You will need " + requiredSupply + " to last you until the ripe old age of " + maxAge + ".";
 } 
 
@@ -65,8 +65,8 @@ console.log(lifetimeSupply(currAge, maxAge, consumptionPerDay));
 // Calculate the circumference based on the radius, and output "The circumference is NN".
 // Calculate the area based on the radius, and output "The area is NN".
 function geometrizer(radius) {
-    areaResult = "The area is: " + Math.pow(radius, 2) * Math.PI + ".";
-    circResult = "The circumference is " + Math.PI * 2 * radius + "."; 
+    var areaResult = "The area is: " + Math.pow(radius, 2) * Math.PI + ".";
+    var circResult = "The circumference is " + Math.PI * 2 * radius + "."; 
     return areaResult + " " + circResult;
 }
 
@@ -82,9 +82,9 @@ console.log(geometrizer(radius));
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
 function tempConverter(celsius) {
-    fahrenheit = 1.8 * celsius + 32;
-    fahrResult = celsius + " °C is " + fahrenheit + " °F.";
-    celsResult = fahrenheit + " °F is " + celsius + " °C.";
+    var fahrenheit = 1.8 * celsius + 32;
+    var fahrResult = celsius + " °C is " + fahrenheit + " °F.";
+    var celsResult = fahrenheit + " °F is " + celsius + " °C.";
     return fahrResult + " " + celsResult;
 }
 
