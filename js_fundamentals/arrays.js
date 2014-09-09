@@ -19,7 +19,7 @@ function ordinal(number) {
 }
 
 var topChoices = ["green", "no president", "whoever", "nothing in particular"],
-    length,
+    numChoices,
     i;
 
 numChoices = topChoices.length;
